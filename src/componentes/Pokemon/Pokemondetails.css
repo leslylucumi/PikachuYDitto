@@ -12,6 +12,9 @@
     border-radius: 0.5rem;
     font-size: medium;
     padding: 0.3rem;
+}.o-buttonvolver:hover{
+    color: black;
+    background-color: #2e66ae;
 }
 .o-buttoncito{
     background-color: #ffcc01;

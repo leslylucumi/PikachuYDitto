@@ -5,4 +5,5 @@
 .o-namemoves{
     display: flex;
     align-content: center;
+    margin: 1rem;
 }

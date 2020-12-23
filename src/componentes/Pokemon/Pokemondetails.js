@@ -7,7 +7,6 @@ import PokemonMoves from "./PokemonMoves";
 import PokemonSprites from "./PokemonSprites";
 import "./Pokemondetails.css";
 
-
 class PokemonDetails extends Component {
   constructor(props) {
     super(props);
@@ -30,72 +29,68 @@ class PokemonDetails extends Component {
       }
     });
     const Abilities = PokeJson.map((abilitiespokemones) => {
-        if (abilitiespokemones.name === this.state.id) {
-          return (
-            <div>
-              <PokemonAbilities
-                nameAbility={abilitiespokemones.abilities.map((abilitiespok) => {
-                    return(
-                        <div>{abilitiespok.ability.name}</div>
-                    )
-                })}
-                // effectAbilities = {abilitiespokemones.abilities.map((abilitiespok) => {
-                //     return(
-                //         <div>{abilitiespok.ability.effect_entries.map((effectspok) => {
-                //             return(
-                //                 <div>{effectspok.effect}
-                //                 {effectspok.short_effect}
-                //                 </div>
-                                
-                //             )
-                //         })}</div>
-                //     )
-                // })}
-              />
-            </div>
-          );
-        }
-      });
-      const Moves = PokeJson.map((movespokemones) => {
-        if (movespokemones.name === this.state.id) {
-          return (
-            <div>
-              <PokemonMoves
-                nameMoves={movespokemones.moves.map((movespok) => {
-                    return(
-                        <div>{movespok.move.name}</div>
-                    )
-                })}
-                // effectMoves = {movespokemones.moves.map((movespok) => {
-                //     return(
-                //         <div>{movespok.effect_entries.map((movespok) => {
-                //             return(
-                //                 <div>{movespok.effect}
-                //                 {movespok.short_effect}
-                //                 </div>
-                                
-                //             )
-                //         })}</div>
-                //     )
-                // })}
-              />
-            </div>
-          );
-        }
-      });
-    
+      if (abilitiespokemones.name === this.state.id) {
+        return (
+          <div>
+            <PokemonAbilities
+              nameAbility={abilitiespokemones.abilities.map((abilitiespok) => {
+                return <div>{abilitiespok.ability.name}</div>;
+              })}
+              // effectAbilities = {abilitiespokemones.abilities.map((abilitiespok) => {
+              //     return(
+              //         <div>{abilitiespok.ability.effect_entries.map((effectspok) => {
+              //             return(
+              //                 <div>{effectspok.effect}
+              //                 {effectspok.short_effect}
+              //                 </div>
+
+              //             )
+              //         })}</div>
+              //     )
+              // })}
+            />
+          </div>
+        );
+      }
+    });
+    const Moves = PokeJson.map((movespokemones) => {
+      if (movespokemones.name === this.state.id) {
+        return (
+          <div>
+            <PokemonMoves
+              nameMoves={movespokemones.moves.map((movespok) => {
+                return <div>{movespok.move.name}</div>;
+              })}
+              // effectMoves = {movespokemones.moves.map((movespok) => {
+              //     return(
+              //         <div>{movespok.effect_entries.map((movespok) => {
+              //             return(
+              //                 <div>{movespok.effect}
+              //                 {movespok.short_effect}
+              //                 </div>
+
+              //             )
+              //         })}</div>
+              //     )
+              // })}
+            />
+          </div>
+        );
+      }
+    });
+
     return (
-        <div className = "o-details">
-      <div className = "o-detailscard">
-        <div>{Sprites}</div>
-        <div>{Abilities}</div>
-        <div>{Moves}</div>
-        <div className = "o-buttoncito">
-            <button className= "o-buttonvolver">
-                <Link to = {"/"}>Volver</Link>
-            </button>
+      <div className="o-details">
+        <div className="o-detailscard">
+          <div>{Sprites}</div>
+          <div>{Abilities}</div>
+          <div>{Moves}</div>
+          <div className="o-buttoncito">
+            <Link to={"/"}>
+              <button className="o-buttonvolver">Volver</button>
+            </Link>
+          </div>
         </div>
-      </div>
       </div>
     );
   }

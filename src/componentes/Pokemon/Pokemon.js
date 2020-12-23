@@ -14,9 +14,7 @@ const Pokemon = (props) => {
           <img className="o-imghome" src={imagePokemon}/>
         </div>
         <div class="o-button">
-          <button className="o-btn">
-          <Link to = {"/details/" + namePokemon}>Ver detalles </Link>
-          </button>
+          <Link to = {"/details/" + namePokemon}><button className="o-btn">Ver detalles </button></Link>
       </div>
       </div>
   );
