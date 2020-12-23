@@ -1,0 +1,7 @@
+.o-abilities{
+    font-family: 'Pokemon GB', sans-serif; 
+}
+.o-nameability{
+    display: flex;
+    justify-content: space-around;
+}

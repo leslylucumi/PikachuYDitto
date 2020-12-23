@@ -1,4 +1,5 @@
 import React from "react"
+import "./PokemonAbilities.css";
 
 
 const PokemonAbilities =(props)=>{
@@ -6,8 +7,9 @@ const PokemonAbilities =(props)=>{
     return (
         
             <div className = "o-abilities">
+            <div>Abilities:</div>
             <div className = "o-nameability">
-               {nameAbility}
+            {nameAbility}
                 </div>
             <div className = "o-effectabilities">
              {effectAbilities} 

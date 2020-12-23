@@ -55,10 +55,10 @@
     width: 20%;
     height: 20%;
   }
-  .o-headerButton {
+  .o-headerButtons {
     display: flex;
     justify-content: flex-end;
-    margin-right: 0.5rem;
+    margin-left: 1rem;
   }
   .o-portada{
     display: flex;
@@ -71,6 +71,7 @@
     font-family:'Montserrat', sans-serif;
     color: white;
   }
+  
   @media only screen and (max-width: 1000px){
     .o-logo{
       width: 10%;
@@ -80,4 +81,5 @@
       display: flex;
       justify-content: center;
     }
+    
   }

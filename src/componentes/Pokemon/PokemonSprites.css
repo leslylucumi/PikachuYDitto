@@ -1,0 +1,13 @@
+.o-cardSprites{
+    display: flex;
+    justify-content: center;
+    background-color:white;
+    border-radius: 2rem 2rem 0rem 0rem;
+    margin: 1rem;
+}
+.o-front{
+    width: 150%;
+}
+.o-espalda{
+    width: 150%;
+}

@@ -1,0 +1,28 @@
+.o-cardpokemonhome{
+    background-color:beige;
+    width: 15rem;
+    height: 18rem;
+    border-radius: 2rem 2rem 1rem 1rem;
+    font-family: 'Pokemon GB', sans-serif; 
+}
+.o-imghome{
+    width: 70%;
+    height: auto;
+    margin: 0;
+}
+.o-imagepokemon{
+    display: flex;
+    justify-content: center;
+}
+.o-encabezado{
+    background-color: #ffcc01;
+    border-radius: 2rem 2rem 0rem 0rem;
+}
+.o-btn{
+    border-radius: 0.5rem;
+    font-size: medium;
+    padding: 0.3rem;
+}
+.o-namepokemon{
+    margin: 0.5rem;
+}

@@ -1,0 +1,8 @@
+.o-moves{
+    font-family: 'Pokemon GB', sans-serif; 
+    align-content: center;
+}
+.o-namemoves{
+    display: flex;
+    align-content: center;
+}

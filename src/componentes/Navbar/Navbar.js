@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Portada from '../Navbar/Portada'
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 
@@ -18,10 +19,17 @@ const Navbar =()=>{
                 />
                 <div className = "o-titlepag">Ditto y Pikachu</div>
               </div>
-              <div class="col-sm-4">
+              <div class="col-sm-6">
                 <div class="row o-headerButtons">
-                  <a class="o-fontheader">
-                  </a>
+                <div className = "o-fontheader">
+                <Link to = {"/"}>Inicio</Link>
+                </div>
+                <div className = "o-fontheader">
+                <Link to = {"/"}>Movimientos</Link>
+                </div>
+                <div className = "o-fontheader">
+                <Link to = {"/"}>Efectos</Link>
+                </div>
                 </div>
               </div>
             </div>

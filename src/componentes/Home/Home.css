@@ -1,0 +1,10 @@
+.o-pokemonescards{
+    padding: 2rem;
+}
+.o-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+

@@ -5,6 +5,8 @@ import PokeJson from "../poke-json.json";
 import PokemonAbilities from "./PokemonAbilities";
 import PokemonMoves from "./PokemonMoves";
 import PokemonSprites from "./PokemonSprites";
+import "./Pokemondetails.css";
+
 
 class PokemonDetails extends Component {
   constructor(props) {
@@ -83,15 +85,17 @@ class PokemonDetails extends Component {
       });
     
     return (
-      <div>
+        <div className = "o-details">
+      <div className = "o-detailscard">
         <div>{Sprites}</div>
         <div>{Abilities}</div>
         <div>{Moves}</div>
-        <div>
-            <button>
-                <Link to = {"/"}>volver</Link>
+        <div className = "o-buttoncito">
+            <button className= "o-buttonvolver">
+                <Link to = {"/"}>Volver</Link>
             </button>
         </div>
+      </div>
       </div>
     );
   }
